@@ -1,4 +1,4 @@
-# 体重追踪视图（Weight Tracker）
+# 体重追踪（Weight Tracker）
 
 ## 功能概述
 
