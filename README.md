@@ -11,14 +11,14 @@
 
 ## 视图列表
 
-### [进度条（Progress Bar）](./Progress%20Bar/README.md)
+### [进度条（Progress Bar）](./progress-bar/README.md)
 
 ![Create 2024-10-31](https://img.shields.io/badge/Create-2024--10--31-orange?style=flat-square&scale=1.5)
 ![Update 2025-02-24](https://img.shields.io/badge/Update-2025--02--24-blue?style=flat-square&scale=1.5) 
 
 进度条视图用于显示完成度或进度信息，也可以显示年月周日的进度。
 
-### [体重追踪（Weight Tracker）](./Weight%20Tracker/README.md)
+### [体重追踪（Weight Tracker）](./weight-tracker/README.md)
 
 ![Create 2025-02-19](https://img.shields.io/badge/Create-2025--02--19-orange?style=flat-square&scale=1.5)
 ![Update 2025-02-24](https://img.shields.io/badge/Update-2025--02--24-blue?style=flat-square&scale=1.5) 
