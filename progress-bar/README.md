@@ -1,5 +1,8 @@
 # 进度条（Progress Bar）
 
+![Created 2024-10-31](https://img.shields.io/badge/Created-2024--10--31-orange?style=flat-square&scale=1.5)
+![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
+
 ## 功能介绍
 进度条组件是一个可自定义的进度显示工具，可用于显示任务完成度、时间进度或作为内容分隔条等多种场景。
 

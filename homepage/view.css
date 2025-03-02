@@ -1,0 +1,222 @@
+/**
+ * 笔记起始页（Homepage）
+ * 作者: 稻米鼠
+ * 网站: https://zji.me/
+ * 支持: https://afdian.com/a/daomishu
+ * 仓库: https://github.com/dmscode/DMS-Dataview-Views
+ * 创建时间: 2024-10-06
+ * 生成时间: 2025-03-02
+ * 一个简单的主页，用于展示个人信息和项目列表。
+ */
+/* src/homepage/view.less */
+.homepage-container {
+  --gap-width: 1rem;
+  --main-color:
+    62,
+    50,
+    50;
+  --border-color: rgba(var(--main-color), .3);
+  --red-color:
+    154,
+    59,
+    59;
+  --blue-color:
+    42,
+    70,
+    107;
+  --green-color:
+    76,
+    90,
+    73;
+  --yellow-color:
+    134,
+    108,
+    72;
+  --orange-color:
+    170,
+    91,
+    55;
+  --pink-color:
+    167,
+    85,
+    112;
+  container-type: inline-size;
+  container-name: homepage-container;
+  --box-width-12: 100%;
+  --box-width-6: calc(50% - var(--gap-width) * 0.5);
+  --box-width-4: calc(33.33% - var(--gap-width) * 0.6667);
+  --box-width-3: calc(25% - var(--gap-width) * 0.75);
+  --box-width-2: calc(16.67% - var(--gap-width) * 0.8333);
+  --box-width-1: calc(8.33% - var(--gap-width) * 0.9167);
+  max-width: 992px;
+  padding: .5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-width);
+  & > .card-box {
+    width: var(--box-width-12);
+    &.clickable {
+      cursor: pointer;
+    }
+  }
+  & > .card-box[data-width="1"] {
+    width: var(--box-width-1);
+  }
+  & > .card-box[data-width="2"] {
+    width: var(--box-width-2);
+  }
+  & > .card-box[data-width="3"] {
+    width: var(--box-width-3);
+  }
+  & > .card-box[data-width="4"] {
+    width: var(--box-width-4);
+  }
+  & > .card-box[data-width="6"] {
+    width: var(--box-width-6);
+  }
+  @container homepage-container (max-width: 768px) {
+    & > .card-box[data-width="1"] {
+      width: var(--box-width-2);
+    }
+    & > .card-box[data-width="2"] {
+      width: var(--box-width-3);
+    }
+    & > .card-box[data-width="3"] {
+      width: var(--box-width-4);
+    }
+    & > .card-box[data-width="4"] {
+      width: var(--box-width-6);
+    }
+  }
+  @container homepage-container (max-width: 576px) {
+    & > .card-box[data-width="1"],
+    & > .card-box[data-width="2"] {
+      width: var(--box-width-4);
+    }
+    & > .card-box[data-width="3"],
+    & > .card-box[data-width="4"] {
+      width: var(--box-width-6);
+    }
+    & > .card-box[data-width="6"] {
+      width: var(--box-width-12);
+    }
+  }
+  @container homepage-container (max-width: 380px) {
+    & > .card-box[data-width="1"] {
+      width: var(--box-width-6);
+    }
+    & > .card-box[data-width="2"],
+    & > .card-box[data-width="3"],
+    & > .card-box[data-width="4"],
+    & > .card-box[data-width="6"] {
+      width: var(--box-width-12);
+    }
+  }
+  & > .card-box {
+    text-align: center;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--border-color);
+    font-size: 1.2rem;
+    line-height: 1.96rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 4px;
+    &:hover {
+      text-decoration: none;
+      border-bottom-width: 5px;
+      margin-bottom: 0;
+      & > .card-box-tip {
+        display: block;
+        opacity: 1;
+      }
+    }
+    &[data-status=gray] {
+      --progress-color: rgba(var(--main-color), .1);
+    }
+    &[data-status=green] {
+      --progress-color: rgba(var(--green-color), .1);
+    }
+    &[data-status=blue] {
+      --progress-color: rgba(var(--blue-color), .1);
+    }
+    &[data-status=yellow] {
+      --progress-color: rgba(var(--yellow-color), .1);
+    }
+    &[data-status=orange] {
+      --progress-color: rgba(var(--orange-color), .1);
+    }
+    &[data-status=red] {
+      --progress-color: rgba(var(--red-color), .1);
+    }
+    &[data-status="red+"] {
+      --progress-color: rgba(var(--red-color), .3);
+    }
+    & > .card-box-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: var(--progress-color);
+      clip-path: border-box;
+    }
+    & > .card-box-icon > img.card-box-icon-img {
+      max-width: 1em;
+      max-height: 1em;
+    }
+    & > .card-box-content {
+      flex-grow: 1;
+    }
+    &::after {
+      content: attr(data-value);
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+      opacity: .2;
+    }
+    & > .card-box-tip {
+      position: absolute;
+      max-width: 100%;
+      min-height: 1.2rem;
+      left: 0;
+      bottom: calc(100% + .5rem);
+      padding: .5em 1.6em;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border-color);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      display: none;
+      box-shadow: 0 5px 0 rgba(0, 0, 0, .1);
+      opacity: 0;
+      transition: all .3s ease-in-out;
+    }
+  }
+  & > .card-box-header {
+    border: none;
+    line-height: 1.6;
+    margin: 0;
+  }
+  & > .card-box-header.card-box-header-1,
+  & > .card-box-header.card-box-header-2,
+  & > .card-box-header.card-box-header-3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    color: rgba(var(--main-color));
+  }
+  & > .card-box-header.card-box-header-1 {
+    font-size: 4rem;
+    opacity: .8;
+  }
+  & > .card-box-header.card-box-header-2 {
+    font-size: 2rem;
+  }
+  & > .card-box-header.card-box-header-3 {
+    font-size: 1.6rem;
+  }
+}

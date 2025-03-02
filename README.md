@@ -13,17 +13,24 @@
 
 ### [进度条（Progress Bar）](./progress-bar/README.md)
 
-![Create 2024-10-31](https://img.shields.io/badge/Create-2024--10--31-orange?style=flat-square&scale=1.5)
-![Update 2025-02-24](https://img.shields.io/badge/Update-2025--02--24-blue?style=flat-square&scale=1.5) 
+![Created 2024-10-31](https://img.shields.io/badge/Created-2024--10--31-orange?style=flat-square&scale=1.5)
+![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
 
-进度条视图用于显示完成度或进度信息，也可以显示年月周日的进度。
+用于显示完成度或进度信息，也可以显示年月周日的进度。
 
 ### [体重追踪（Weight Tracker）](./weight-tracker/README.md)
 
-![Create 2025-02-19](https://img.shields.io/badge/Create-2025--02--19-orange?style=flat-square&scale=1.5)
-![Update 2025-02-24](https://img.shields.io/badge/Update-2025--02--24-blue?style=flat-square&scale=1.5) 
+![Created 2025-02-02](https://img.shields.io/badge/Created-2025--02--02-orange?style=flat-square&scale=1.5)
+![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
 
-用于追踪和可视化体重变化数据。
+一个体重和体脂率追踪的可视化工具
+
+### [笔记起始页（Homepage）](./homepage/README.md)
+
+![Created 2024-10-06](https://img.shields.io/badge/Created-2024--10--06-orange?style=flat-square&scale=1.5)
+![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
+
+一个简单的主页，用于展示个人信息和项目列表。
 
 ## 请我喝杯咖啡可好？
 

@@ -4,10 +4,10 @@
  * 网站: https://zji.me/
  * 支持: https://afdian.com/a/daomishu
  * 仓库: https://github.com/dmscode/DMS-Dataview-Views
- * 生成时间: 2025/2/24 09:50:13
- * 此文件由构建工具自动生成，请勿直接修改
+ * 创建时间: 2024-10-31
+ * 生成时间: 2025-03-02
+ * 用于显示完成度或进度信息，也可以显示年月周日的进度。
  */
-
 /* src/progress-bar/view.less */
 label.dms-progress {
   display: flex;
