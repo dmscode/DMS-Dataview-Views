@@ -1,7 +1,7 @@
 # 体重追踪（Weight Tracker）
 
 ![Created 2025-02-02](https://img.shields.io/badge/Created-2025--02--02-orange?style=flat-square&scale=1.5)
-![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
+![Updated 2025-04-09](https://img.shields.io/badge/Updated-2025--04--09-blue?style=flat-square&scale=1.5)
 
 ## 功能概述
 
@@ -29,6 +29,17 @@ Weight Tracker 是一个体重和体脂率追踪的可视化工具，它能够�
 > - 日期、体重和体脂率之间使用 `|` 或空格分隔
 > - 体重单位为斤
 > - 体脂率单位为百分比
+
+### 衣物增减偏移量
+
+```
+- Set -0.89
+```
+
+表示减掉了 0.89 斤的衣物。这个数值会补偿在体重盒体之上，以保证图表仍能正确显示趋势。
+
+粗略的认为增减衣物的 80% 会加在脂肪上
+
 
 ## 调用方法
 

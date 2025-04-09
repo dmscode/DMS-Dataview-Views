@@ -14,23 +14,30 @@
 ### [进度条（Progress Bar）](./progress-bar/README.md)
 
 ![Created 2024-10-31](https://img.shields.io/badge/Created-2024--10--31-orange?style=flat-square&scale=1.5)
-![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
+![Updated 2025-04-09](https://img.shields.io/badge/Updated-2025--04--09-blue?style=flat-square&scale=1.5)
 
 用于显示完成度或进度信息，也可以显示年月周日的进度。
 
 ### [体重追踪（Weight Tracker）](./weight-tracker/README.md)
 
 ![Created 2025-02-02](https://img.shields.io/badge/Created-2025--02--02-orange?style=flat-square&scale=1.5)
-![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
+![Updated 2025-04-09](https://img.shields.io/badge/Updated-2025--04--09-blue?style=flat-square&scale=1.5)
 
 一个体重和体脂率追踪的可视化工具
 
 ### [笔记起始页（Homepage）](./homepage/README.md)
 
 ![Created 2024-10-06](https://img.shields.io/badge/Created-2024--10--06-orange?style=flat-square&scale=1.5)
-![Updated 2025-03-02](https://img.shields.io/badge/Updated-2025--03--02-blue?style=flat-square&scale=1.5)
+![Updated 2025-04-09](https://img.shields.io/badge/Updated-2025--04--09-blue?style=flat-square&scale=1.5)
 
 一个简单的主页，用于展示个人信息和项目列表。
+
+### [文件树状图（File Tree)](./file-tree/README.md)
+
+![Created 2025-04-09](https://img.shields.io/badge/Created-2025--04--09-orange?style=flat-square&scale=1.5)
+![Updated 2025-04-09](https://img.shields.io/badge/Updated-2025--04--09-blue?style=flat-square&scale=1.5)
+
+一个用于展示文件和文件夹的树形结构的组件。
 
 ## 请我喝杯咖啡可好？
 
